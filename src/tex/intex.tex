@@ -1,0 +1,31 @@
+\usepackage[titles]{tocloft}
+\usepackage[hidelinks]{hyperref}
+\usepackage[demo]{graphicx}
+
+\newcommand{\listiframetitle}{Lista de iframes}
+\newlistof{iframes}{exp}{\listiframetitle}
+\newcommand{\iframelist}[1]{%
+  \refstepcounter{iframes}
+  \addcontentsline{exp}{iframes}
+  {\protect\numberline{\theiframes}#1}
+}
+
+%\iframe{<w>}{<h>}{<url>}
+\newcommand{\iframe}[3]{
+\begin{center}
+\href{#3.iframe}{\fbox{\resizebox{#1\textwidth}{#2\textwidth}{-}}}
+\end{center}
+}
+
+%\iframecap{<w>}{<h>}{<url>}{<caption>}
+\newcommand{\iframecap}[4]{
+\begin{center}
+\href{#3.iframe}{\fbox{\resizebox{#1\textwidth}{#2\textwidth}{-}}}
+\end{center}
+\begin{center}
+\textbf{Iframe \theiframes}: #4
+\end{center}
+\iframelist{#4}
+}
+
+%\listofiframes
