@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.5)  30 NOV 2016 17:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.5)  1 DEC 2016 19:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -37,13 +37,25 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3 \usepackage[demo]{
-                      graphicx}
+l.3 \usepackage{
+                graphicx}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \usepackage{
+                float}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
 ! Undefined control sequence.
-l.6 \newlistof
+l.7 \newlistof
               {iframecap}{ifc}{\listiframename}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -58,7 +70,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6 \newlistof{i
+l.7 \newlistof{i
                 framecap}{ifc}{\listiframename}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -89,7 +101,7 @@ Missing character: There is no m in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 6--7
+Overfull \hbox (20.0pt too wide) in paragraph at lines 7--8
 []
  []
 
@@ -101,11 +113,11 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 6--7
 
  
 Here is how much of TeX's memory you used:
- 15 strings out of 493014
- 217 string characters out of 6131500
+ 18 strings out of 493014
+ 235 string characters out of 6131500
  53601 words of memory out of 5000000
- 3658 multiletter control sequences out of 15000+600000
+ 3661 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 7i,0n,6p,88b,16s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 7i,0n,6p,124b,16s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

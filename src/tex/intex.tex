@@ -1,30 +1,27 @@
 \usepackage{tocloft}
 \usepackage[hidelinks]{hyperref}
-\usepackage[demo]{graphicx}
+\usepackage{graphicx}
+\usepackage{float}
 
-\newcommand{\listiframename}{List of Iframes}
-\newlistof{iframecap}{ifc}{\listiframename}
-
-%\iframe{<w>}{<h>}{<url>}
-\newcommand{\iframe}[3]{
-{\centering
-\href{#3.iframe}{\fbox{\resizebox{#1\textwidth}{#2\textwidth}{$\nexists$}}}
-\par
+\newcommand{\newclass}[2]{
+\newfloat{#1}{h}{ext}[chapter]
+\floatname{#1}{#2}
+\expandafter\newcommand\csname listof#1\endcsname{\listof{#1}{List of #2}}%
+\expandafter\newcommand\csname insert#1\endcsname[3]{\href{##3\##1}{\fbox{\parbox[c][##2][c]{##1}{\url{##3}}}}}%
+\expandafter\newcommand\csname frame#1\endcsname[3]{
+\begin{#1}
+%\href{##3.#1}{\fbox{\parbox[c][##2\textwidth][c]{##1\textwidth}{##3}}}
+\centering
+\csname insert#1\endcsname{##1\textwidth}{##2\textwidth}{##3}
+\end{#1}
+}%
+\expandafter\newcommand\csname frame#1cap\endcsname[4]{
+\begin{#1}
+%\href{##3.#1}{\fbox{\parbox[c][##2\textwidth][c]{##1\textwidth}{##3}}}
+\centering
+\csname insert#1\endcsname{##1\textwidth}{##2\textwidth}{##3}
+\caption{##4}
+\end{#1}
+}%
 }
-}
-
-%\iframecap{<w>}{<h>}{<url>}{<caption>}
-\newcommand{\iframecap}[4]{
-{\centering
-\href{#3.iframe}{\fbox{\resizebox{#1\textwidth}{#2\textwidth}{$\infty$}}}
-\refstepcounter{iframecap}
-\par\noindent{Iframe \theiframecap: #4}
-\addcontentsline{ifc}{iframecap}
-{\protect\numberline{\thechapter.\theiframecap\,}#4}\par}
-}
-
-\newcommand{\listofiframe}{
-\newpage
-\listofiframecap
-\newpage
-}
+%\newcommand{\listoftestbox}{\listof{testbox}{List of textboxes}}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.5)  30 NOV 2016 17:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.5)  1 DEC 2016 19:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -203,14 +203,14 @@ File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 \Gin@req@height=\dimen107
 \Gin@req@width=\dimen108
 )
-\c@iframecap=\count101
-\cftbeforeiframecapskip=\skip78
-\cftiframecapindent=\skip79
-\cftiframecapnumwidth=\skip80
-\c@ifcdepth=\count102
-\cftbeforeifctitleskip=\skip81
-\cftafterifctitleskip=\skip82
-)
+(/home/giovanni/texlive/2016/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count101
+\float@exts=\toks15
+\float@box=\box26
+\@float@everytoks=\toks16
+\@floatcapt=\box27
+))
 (./simple.aux)
 \openout1 = `simple.aux'.
 
@@ -228,7 +228,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
-\AtBeginShipoutBox=\box26
+\AtBeginShipoutBox=\box28
 Package hyperref Info: Link coloring OFF on input line 4.
 
 (/home/giovanni/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -237,7 +237,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/home/giovanni/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count103
+\c@section@level=\count102
 )
 LaTeX Info: Redefining \ref on input line 4.
 LaTeX Info: Redefining \pageref on input line 4.
@@ -249,17 +249,17 @@ LaTeX Info: Redefining \nameref on input line 4.
 
 (/home/giovanni/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count104
+\scratchcounter=\count103
 \scratchdimen=\dimen109
-\scratchbox=\box27
-\nofMPsegments=\count105
-\nofMParguments=\count106
-\everyMPshowfont=\toks15
-\MPscratchCnt=\count107
+\scratchbox=\box29
+\nofMPsegments=\count104
+\nofMParguments=\count105
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count106
 \MPscratchDim=\dimen110
-\MPnumerator=\count108
-\makeMPintoPDFobject=\count109
-\everyMPtoPDFconversion=\toks16
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
+\everyMPtoPDFconversion=\toks18
 ) (/home/giovanni/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -275,86 +275,48 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+\@float@every@test=\toks19
+\c@test=\count109
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 5.
+(Font)              <7> on input line 6.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 5.
-
-! Undefined control sequence.
-<recently read> \nexists 
-                         
-l.5 ...{https://www.youtube.com/embed/_Osnhowfzjo}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! Package graphics Error: Division by 0.
-
-See the graphics package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.5 ...{https://www.youtube.com/embed/_Osnhowfzjo}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package graphics Error: Division by 0.
-
-See the graphics package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.5 ...{https://www.youtube.com/embed/_Osnhowfzjo}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+(Font)              <5> on input line 6.
+Package hyperref Info: bookmark level for unknown test defaults to 0 on input l
+ine 7.
  [1{/home/giovanni/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-] [2]
-(./simple.ifc)
-\tf@ifc=\write4
-\openout4 = `simple.ifc'.
+] [2
 
- [3] [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 16.
- [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 16.
+] (./simple.ext)
+\tf@ext=\write4
+\openout4 = `simple.ext'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 9.
+ [3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 9.
  (./simple.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 16.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 16.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 9.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 9.
 Package rerunfilecheck Info: File `simple.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 16.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 9.
  ) 
 Here is how much of TeX's memory you used:
- 5351 strings out of 493014
- 80009 string characters out of 6131500
- 162194 words of memory out of 5000000
- 8872 multiletter control sequences out of 15000+600000
- 4599 words of font info for 17 fonts, out of 8000000 for 9000
+ 5389 strings out of 493014
+ 80375 string characters out of 6131500
+ 162037 words of memory out of 5000000
+ 8911 multiletter control sequences out of 15000+600000
+ 4767 words of font info for 18 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 31i,5n,36p,211b,349s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 31i,6n,39p,229b,385s stack positions out of 5000i,500n,10000p,200000b,80000s
 </home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12
 .pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 10.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msl10.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb>
-Output written on simple.pdf (5 pages, 42724 bytes).
+mtt10.pfb>
+Output written on simple.pdf (3 pages, 34189 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
+ 40 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
