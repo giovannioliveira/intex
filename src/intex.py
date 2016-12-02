@@ -8,7 +8,7 @@ def set_iframe(entry, href):
     entry.contents[0].append(
         BeautifulSoup('<iframe style="width:100%; height:100%;" src="{0}" frameborder="0" allowfullscreen></iframe>'
                       .format(href),'html.parser'))
-setters = {'iframe':set_iframe}
+setters = {'video':set_iframe,'applet':set_iframe}
 #endregion iframe
 
 #region dialog
@@ -55,9 +55,9 @@ def main():
     global setters
     for tag in soup.find_all('a'):
         href = tag.get('href')
-        suffix = href.split('.')[-1]
+        suffix = href.split('#')[-1]
         if suffix in setters.keys():
-            newhref = href.replace('.' + suffix, '')
+            newhref = href.replace('#' + suffix, '')
             setters[suffix](tag, newhref)
 
     with open(ht, "w") as file:
