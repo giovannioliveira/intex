@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a81dd364-eac8-45e8-8b76-3fd30dc5f615" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/gen/bg1.png" afterPath="$PROJECT_DIR$/samples/simple/gen/bg1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/gen/bg2.png" afterPath="$PROJECT_DIR$/samples/simple/gen/bg2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/gen/f1.woff" afterPath="$PROJECT_DIR$/samples/simple/gen/f1.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/gen/f2.woff" afterPath="$PROJECT_DIR$/samples/simple/gen/f2.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/gen/f3.woff" afterPath="$PROJECT_DIR$/samples/simple/gen/f3.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/gen/simple.pdf" afterPath="$PROJECT_DIR$/samples/simple/gen/simple.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/simple/s.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/simple.pdf" afterPath="$PROJECT_DIR$/samples/simple/simple.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/simple.synctex.gz" afterPath="$PROJECT_DIR$/samples/simple/simple.synctex.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/gen/simple.css" afterPath="$PROJECT_DIR$/samples/simple/gen/simple.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/gen/simple.html" afterPath="$PROJECT_DIR$/samples/simple/gen/simple.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/simple.aux" afterPath="$PROJECT_DIR$/samples/simple/simple.aux" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/simple.ifc" afterPath="$PROJECT_DIR$/samples/simple/simple.ifc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/simple.ext" afterPath="$PROJECT_DIR$/samples/simple/simple.ext" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/simple.log" afterPath="$PROJECT_DIR$/samples/simple/simple.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/simple.tex" afterPath="$PROJECT_DIR$/samples/simple/simple.tex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tex/intex.log" afterPath="$PROJECT_DIR$/src/tex/intex.log" />
@@ -40,26 +33,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="intex.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="intex.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/intex.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-143">
+            <state relative-caret-position="15">
               <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
               <folding>
                 <element signature="e#19#33#0" expanded="true" />
                 <element signature="e#95#109#0" expanded="false" />
                 <element signature="e#389#403#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simple.tex" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/samples/simple/simple.tex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -195,28 +178,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="intex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="intex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="samples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="livro1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -238,14 +199,15 @@
     <option name="myIpythonEnabled" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/tex" />
-      <recent name="$PROJECT_DIR$/samples/simple" />
-      <recent name="$PROJECT_DIR$/samples" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/samples/livro1" />
       <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/samples/simple" />
+      <recent name="$PROJECT_DIR$/samples/simple/gen" />
+      <recent name="$PROJECT_DIR$/src/tex" />
+      <recent name="$PROJECT_DIR$/samples" />
     </key>
   </component>
   <component name="RunManager">
@@ -478,11 +440,11 @@
     <frame x="0" y="0" width="1366" height="742" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27389985" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27769348" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -534,6 +496,26 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/intex.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+          <folding>
+            <element signature="e#19#33#0" expanded="true" />
+            <element signature="e#95#109#0" expanded="false" />
+            <element signature="e#389#403#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/simple/simple.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/intex.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -668,23 +650,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/samples/simple/gen/bg2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/simple/gen/bg1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/simple/simple.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/intex.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-143">
+        <state relative-caret-position="15">
           <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
           <folding>
             <element signature="e#19#33#0" expanded="true" />
             <element signature="e#95#109#0" expanded="false" />
             <element signature="e#389#403#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/simple/simple.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
