@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a81dd364-eac8-45e8-8b76-3fd30dc5f615" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/simple/s.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/gen/bg1.png" afterPath="$PROJECT_DIR$/samples/simple/gen/bg1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/gen/bg2.png" afterPath="$PROJECT_DIR$/samples/simple/gen/bg2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/gen/f1.woff" afterPath="$PROJECT_DIR$/samples/simple/gen/f1.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/gen/f2.woff" afterPath="$PROJECT_DIR$/samples/simple/gen/f2.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/gen/f3.woff" afterPath="$PROJECT_DIR$/samples/simple/gen/f3.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/gen/simple.pdf" afterPath="$PROJECT_DIR$/samples/simple/gen/simple.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/simple.pdf" afterPath="$PROJECT_DIR$/samples/simple/simple.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/simple.synctex.gz" afterPath="$PROJECT_DIR$/samples/simple/simple.synctex.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/gen/simple.css" afterPath="$PROJECT_DIR$/samples/simple/gen/simple.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/gen/simple.html" afterPath="$PROJECT_DIR$/samples/simple/gen/simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/simple.aux" afterPath="$PROJECT_DIR$/samples/simple/simple.aux" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/simple.ext" afterPath="$PROJECT_DIR$/samples/simple/simple.ext" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/simple.log" afterPath="$PROJECT_DIR$/samples/simple/simple.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/simple/simple.tex" afterPath="$PROJECT_DIR$/samples/simple/simple.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/intex.py" afterPath="$PROJECT_DIR$/src/intex.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tex/intex.log" afterPath="$PROJECT_DIR$/src/tex/intex.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tex/intex.tex" afterPath="$PROJECT_DIR$/src/tex/intex.tex" />
     </list>
@@ -45,7 +33,7 @@
       <file leaf-file-name="intex.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/intex.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
+            <state relative-caret-position="270">
               <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding>
                 <element signature="e#19#33#0" expanded="true" />
@@ -74,9 +62,9 @@
         <option value="$PROJECT_DIR$/intex2.py" />
         <option value="$PROJECT_DIR$/src/intex2.py" />
         <option value="$PROJECT_DIR$/src/intex.old.py" />
-        <option value="$PROJECT_DIR$/src/tex/intex.tex" />
         <option value="$PROJECT_DIR$/samples/simple/simple.tex" />
         <option value="$PROJECT_DIR$/src/intex.py" />
+        <option value="$PROJECT_DIR$/src/tex/intex.tex" />
       </list>
     </option>
   </component>
@@ -88,7 +76,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="width" value="1366" />
-    <option name="height" value="742" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -115,6 +103,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -215,8 +205,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -468,18 +456,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="742" extended-state="0" />
+    <frame x="0" y="0" width="1366" height="741" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27769348" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28528073" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32692307" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3216" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3221154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -527,6 +515,30 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/intex.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#19#33#0" expanded="true" />
+            <element signature="e#95#109#0" expanded="false" />
+            <element signature="e#408#422#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/intex.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#19#33#0" expanded="true" />
+            <element signature="e#95#109#0" expanded="false" />
+            <element signature="e#408#422#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/intex.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -667,13 +679,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tex/iframelist.tex" />
-    <entry file="file://$PROJECT_DIR$/src/tex/intex.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/samples/simple/gen/simple.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -699,9 +704,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/tex/intex.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/intex.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
+        <state relative-caret-position="270">
           <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
             <element signature="e#19#33#0" expanded="true" />
