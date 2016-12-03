@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.5)  3 DEC 2016 13:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.5)  3 DEC 2016 20:54
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -23,8 +23,9 @@ File: bk10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-(../../src/tex/intex.tex
+) (./intex.sty
+Package: intex 2016/12/03 Intex v0.1 betta
+
 (/home/giovanni/texlive/2016/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 44.
@@ -211,12 +212,6 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks16
 \@floatcapt=\box27
 )
-(../../src/tex/imageeqn.sty
-
-LaTeX Warning: You have requested package `../../src/tex/imageeqn',
-               but the package provides `imageeqn'.
-
-Package: imageeqn 2014/11/30 v0.2 Image equations
 (/home/giovanni/texlive/2016/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
 
@@ -475,7 +470,7 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 ))
 \@out=\write4
 \c@ie@subjob=\count112
-)) (./simple.aux)
+) (./simple.aux)
 \openout1 = `simple.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
@@ -600,13 +595,13 @@ Package rerunfilecheck Info: File `simple.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 21.
  ) 
 Here is how much of TeX's memory you used:
- 12951 strings out of 493014
- 237435 string characters out of 6131500
- 304602 words of memory out of 5000000
+ 12947 strings out of 493014
+ 237287 string characters out of 6131500
+ 304530 words of memory out of 5000000
  16285 multiletter control sequences out of 15000+600000
  4767 words of font info for 18 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,9n,47p,458b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,9n,47p,458b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
 </home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12
 .pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 10.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/c

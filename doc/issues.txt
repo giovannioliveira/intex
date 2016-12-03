@@ -4,3 +4,5 @@ id	type    status	description
 3   improv  open    check doc type when selecting input
 4   improv  open    warn src pdf overwrite when outdir = srcdir
 5   bug     closed  math expr like srqt getting deformed after html conv
+6   bug     open    import imageeqn.sty with reltive path
+7   task    open    implement interface to register classes
