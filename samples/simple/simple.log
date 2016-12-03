@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.5)  2 DEC 2016 16:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.5)  2 DEC 2016 18:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -210,29 +210,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box26
 \@float@everytoks=\toks16
 \@floatcapt=\box27
-)
-(/home/giovanni/texlive/2016/texmf-dist/tex/latex/xifthen/xifthen.sty
-Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
-
-(/home/giovanni/texlive/2016/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count102
-\calc@Bcount=\count103
-\calc@Adimen=\dimen109
-\calc@Bdimen=\dimen110
-\calc@Askip=\skip78
-\calc@Bskip=\skip79
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count104
-\calc@Cskip=\skip80
-)
-(/home/giovanni/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-(/home/giovanni/texlive/2016/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
-Package: ifmtarg 2009/09/02 v1.2a check for an empty argument
-)))
+))
 (./simple.aux)
 \openout1 = `simple.aux'.
 
@@ -259,7 +237,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/home/giovanni/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count105
+\c@section@level=\count102
 )
 LaTeX Info: Redefining \ref on input line 4.
 LaTeX Info: Redefining \pageref on input line 4.
@@ -271,16 +249,16 @@ LaTeX Info: Redefining \nameref on input line 4.
 
 (/home/giovanni/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count106
-\scratchdimen=\dimen111
+\scratchcounter=\count103
+\scratchdimen=\dimen109
 \scratchbox=\box29
-\nofMPsegments=\count107
-\nofMParguments=\count108
+\nofMPsegments=\count104
+\nofMParguments=\count105
 \everyMPshowfont=\toks17
-\MPscratchCnt=\count109
-\MPscratchDim=\dimen112
-\MPnumerator=\count110
-\makeMPintoPDFobject=\count111
+\MPscratchCnt=\count106
+\MPscratchDim=\dimen110
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
 \everyMPtoPDFconversion=\toks18
 ) (/home/giovanni/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -298,7 +276,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \@float@every@video=\toks19
-\c@video=\count112
+\c@video=\count109
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 7.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -318,24 +296,26 @@ Package pdftex.def Info: paul.png used on input line 13.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[1
+[1{/home/giovanni/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-{/home/giovanni/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2 <./paul.png>] (./simple.ext)
+]
+[2 <./paul.png>]
+Missing character: There is no √ in font cmbx12!
+Missing character: There is no ≠ in font cmbx12!
+ (./simple.ext)
 \tf@ext=\write4
 \openout4 = `simple.ext'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3
 
 ]
-[4]
+Missing character: There is no √ in font cmsl10!
+Missing character: There is no ç in font cmsl10!
+ [4]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 19.
- [5
-
-]
+Missing character: There is no √ in font cmsl10!
+Missing character: There is no ç in font cmsl10!
+ [5]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 19.
  (./simple.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 19.
@@ -345,19 +325,19 @@ Package rerunfilecheck Info: File `simple.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 19.
  ) 
 Here is how much of TeX's memory you used:
- 5573 strings out of 493014
- 83069 string characters out of 6131500
- 169717 words of memory out of 5000000
- 9075 multiletter control sequences out of 15000+600000
+ 5404 strings out of 493014
+ 80560 string characters out of 6131500
+ 167224 words of memory out of 5000000
+ 8921 multiletter control sequences out of 15000+600000
  4767 words of font info for 18 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 31i,7n,42p,478b,395s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 31i,7n,42p,458b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
 </home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12
 .pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 10.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msl10.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmtt10.pfb>
-Output written on simple.pdf (5 pages, 1067176 bytes).
+Output written on simple.pdf (5 pages, 1067235 bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream

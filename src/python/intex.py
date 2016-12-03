@@ -2,6 +2,7 @@
 import sys, os
 from PyQt5.QtWidgets import *
 from bs4 import BeautifulSoup
+from conv import Ui_Dialog
 
 #region iframe
 def set_iframe(entry, href):
@@ -23,20 +24,51 @@ def select_file(type=QFileDialog.ExistingFile):
     return dlg.selectedFiles() if dlg.exec() else None
 #endregion dialog
 
+class ConvDialog(QDialog,Ui_Dialog):
+
+    def __init__(self):
+        QDialog.__init__(self)
+        Ui_Dialog.setupUi(self,self)
+        if len(sys.argv)>1:
+            self.etIn.setText(sys.argv[1])
+            if len(sys.argv)>2:
+                self.etOut.setText(sys.argv[2])
+        self.set_listeners()
+        self.inp,self.out = None,None
+
+    def set_listeners(self):
+        self.btIn.clicked.connect(self.on_in)
+        self.btOut.clicked.connect(self.on_out)
+        self.btBox.button(QDialogButtonBox.Ok).clicked.disconnect()
+        self.btBox.button(QDialogButtonBox.Ok).clicked.connect(self.on_ok)
+
+    def on_in(self):
+        aux = select_file()
+        if aux:
+            self.etIn.setText(aux[0])
+    def on_out(self):
+        aux = select_file(QFileDialog.Directory)
+        if aux:
+            self.etOut.setText(aux[0])
+    def on_ok(self):
+        inp,out = self.etIn.text(),self.etOut.text()
+        if len(inp)>0 and len(out)>0:
+            self.inp,self.out = inp,out
+            self.close()
+
+
 def main():
     app = QApplication(sys.argv)
-    if len(sys.argv)>1:
-        src = sys.argv[1]
+    if len(sys.argv)>2:
+        src,destname = sys.argv[1:3]
     else:
-        sel = select_file()
-        src = sel[0] if sel else None
-    if not src:
-        sys.exit(0)
+        aux = ConvDialog()
+        aux.exec()
+        if aux.inp and aux.out:
+            src,destname = aux.inp,aux.out
+        else:
+            sys.exit(1)
     srcname = src.split('/')[-1].replace('.pdf','')
-    destname = select_file(QFileDialog.Directory)
-    if not destname:
-        sys.exit(0)
-    destname = destname[0]
     dest = destname + '/' + srcname + '.pdf'
     ret = os.system('gs -sDEVICE=pdfwrite -sOutputFile=%s -dNOPAUSE -dBATCH %s' % (dest, src))
     if ret:

@@ -3,16 +3,15 @@
 \usepackage{graphicx}
 \usepackage{float}
 
-\newcommand{\newclass}[2]{
+\newcommand{\newclass}[3]{
 
 \newfloat{#1}{h}{ext}[chapter]
 
 \floatname{#1}{#2}
 
 \expandafter\newcommand\csname listof#1\endcsname{
-	\thispagestyle{empty}
-	\listof{#1}{List of #2}
-	\pagebreak
+	\listof{#1}{#3}
+	\newpage
 }%
 
 \expandafter\newcommand\csname insert#1\endcsname[3]{
