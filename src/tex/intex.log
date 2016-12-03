@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.5)  2 DEC 2016 16:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.5)  3 DEC 2016 13:20
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **intex.tex
 (./intex.tex
@@ -62,7 +62,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.5 \usepackage{
-                xifthen}
+                ./imageeqn}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 

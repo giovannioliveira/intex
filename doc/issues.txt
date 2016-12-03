@@ -3,4 +3,4 @@ id	type    status	description
 2	bug     open	header keeps listof name after listof end
 3   improv  open    check doc type when selecting input
 4   improv  open    warn src pdf overwrite when outdir = srcdir
-5   bug     open    math expr like srqt getting deformed after html conv
+5   bug     closed  math expr like srqt getting deformed after html conv
