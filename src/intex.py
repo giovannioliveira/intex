@@ -4,15 +4,12 @@ from PyQt5.QtWidgets import *
 from bs4 import BeautifulSoup
 from conv import Ui_Dialog
 
-#region iframe
 def set_iframe(entry, href):
     entry.contents[0].append(
         BeautifulSoup('<iframe style="width:100%; height:100%;" src="{0}" frameborder="0" allowfullscreen></iframe>'
                       .format(href),'html.parser'))
 setters = {'video':set_iframe,'applet':set_iframe}
-#endregion iframe
 
-#region dialog
 def message(text):
     msg = QMessageBox()
     msg.setText(text)
@@ -22,7 +19,6 @@ def select_file(type=QFileDialog.ExistingFile):
     dlg = QFileDialog()
     dlg.setFileMode(type)
     return dlg.selectedFiles() if dlg.exec() else None
-#endregion dialog
 
 class ConvDialog(QDialog,Ui_Dialog):
 
@@ -55,7 +51,6 @@ class ConvDialog(QDialog,Ui_Dialog):
         if len(inp)>0 and len(out)>0:
             self.inp,self.out = inp,out
             self.close()
-
 
 def main():
     app = QApplication(sys.argv)
