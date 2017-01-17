@@ -1,0 +1,171 @@
+<html><head>
+<!-- $Id: location.html,v 1.91 2016/09/29 22:15:18 karl Exp $ -->
+<title>TUGboat styles and information - TeX Users Group</title>
+<link rel="stylesheet" href="/tugstyle.css">
+</head><body>
+
+<h2>TUGboat styles and information</h2>
+
+<p>The <a href="/TUGboat/">TUGboat</a> macros are included in all major
+TeX distributions, so most likely you don't have to do anything to
+install them.  If you need or want the latest, it's available on <a
+href="/ctan.html">CTAN</a>, <a href="#location">see below</a>.
+
+<!-- $Id: deadlines.html,v 1.11 2016/10/30 23:01:07 karl Exp $ -->
+<h3>Upcoming submission deadlines</h3>
+<ul>
+<li>vol.38, no.1 (regular issue): February&nbsp;24, 2017.
+<li>vol.38, no.2 (BachoTeX/TUG'17 proceedings): May&nbsp;12, 2017.
+<li>vol.38, no.3 (regular issue): September&nbsp;1, 2017.
+<li>vol.39, no.1 (regular issue): March&nbsp;2, 2018.
+</ul>
+<!-- end deadlines.html -->
+
+
+
+<h3 id="template">Article template</h3>
+
+<p>This <a href="sampleart.ltx">sample article template</a> also
+includes a super-summary of some of the most commonly used features of
+the TUGboat style.
+
+
+<h3 id="tips">Quick tips for authors</h3>
+
+<ul>
+<li>Please keep source lines to <= 79 characters.  That is, if your
+editor likes to do one line per paragraph without hard line breaks,
+please try to configure it otherwise.  Failing that, we will rebreak
+the source on receipt.
+
+<li>Even today, 7-bit ASCII is by far the most reliable encoding for the
+source text.  TeX control sequences are preferred to Unicode or
+Latin&nbsp;N characters.  But if your source needs non-ASCII to be
+readable, that's fine.
+
+<li>The TUGboat style files have many predefined abbreviations; please
+use them where possible.  The <a href="sampleart.ltx">sample article
+template</a> lists some that are commonly used.
+
+<li>Use <tt>\acro{WORD}</tt> for other words in ALL CAPS.
+
+<li>Use <tt>\cs{foo}</tt> to output the control sequence <tt>\foo</tt>.
+
+<li>Use <tt>\Dash</tt> instead of <tt>---</tt>.
+
+<li>Footnotes <em>after</em> punctuation.
+
+<li>Even better, avoid footnotes completely.  They complicate page
+breaking and usually disturb reading.  References, especially, are
+better put in a bibliography.  Abbreviations are better as a
+parenthetical remark.  (&ldquo;Don't use footnotes in your books,
+Don.&rdquo; &mdash;Jill Knuth.)  Nevertheless, if you feel you must have
+footnotes, it's ok.
+
+<li>Write an abstract.  Don't include bibliography references in the
+abstract.
+
+<li>Do not worry about figure placement, page breaks, column breaks,
+etc., because they will almost certainly change during editing.
+
+<li>TUGboat is produced entirely with pdf files, so do not worry about
+dvi output, eps format for figures, etc.  On the other hand, if dvi
+output is <i>needed</i> for your paper, that's fine.
+
+<li>If you need to use OpenType/TrueType fonts with XeTeX/LuaTeX, that's
+fine, but please do not use system font lookups; systems differ.
+Instead, use filename lookups (see the <a
+href="http://ctan.org/pkg/fontspec">fontspec</a> documentation if need
+be, or we will help as needed).  Also, if the fonts are not part of TeX
+Live, please say where we can get them.
+
+<li>Do not use the word &ldquo;really&rdquo;.
+
+</ul>
+
+
+<h3 id="writing">General advice on content</h3>
+
+<ul>
+<li>Consider the topic from the point of view of an
+    interested reader: if you weren't the author, what would you
+    like to learn from the article?
+
+<li>The length of an article should depend on the topic.
+    The article should cover the chosen ground completely, leaving no
+    major questions unanswered, but it should do so concisely.  Shorter
+    articles are more likely to be read.  If in doubt, shoot for five
+    pages or less.
+
+<li>Don't worry overmuch about deadlines; there will always be another
+    issue.  It's better to take enough time to do the best job than
+    to hurry the work.
+
+<li>If illustrations will aid comprehension, include them.
+
+<li>Illustrations that truly require color can be printed in color.
+    However, color pages are of course much more expensive to print.  So
+    when color is not required, please check that your images degrade ok
+    in black and white.  (Color versions can be posted on the web.)
+    
+<li>If you have questions, just ask.  That's what editors are for. 
+</ul>
+
+
+<h3 id="bugs">Contact for submissions, questions, problems, bugs, &hellip;</h3>
+
+Email <a href="mailto:tugboat@tug.org">TUGboat@tug.org</a>.
+
+
+<h3 id="ctan">TUGboat macros on CTAN</h3>
+
+<p>Both the plain and LaTeX TUGboat macros are included in <a
+href="/texlive/">TeX Live</a> and <a
+href="http://www.miktex.org">MiKTeX</a>, among other distributions, so
+you almost certainly have them installed already if you have TeX at all.
+But in case you want to check the latest versions, or just peruse
+&hellip;
+
+<p>On CTAN, plain TeX macros and user documentation are located in<br>
+    <tt>/tex-archive/macros/plain/contrib</tt>:
+    <a href="http://www.ctan.org/tex-archive/macros/plain/contrib/tugboat/">browse</a>,
+    <a href="ftp://tug.ctan.org/tex-archive/macros/plain/contrib/tugboat.zip">zip</a>.
+
+<p>LaTeX macros and user documentation are located in<br>
+    <tt>/tex-archive/macros/latex/contrib/tugboat</tt>:
+    <a href="http://www.ctan.org/tex-archive/macros/latex/contrib/tugboat/">browse</a>,
+    <a href="ftp://tug.ctan.org/tex-archive/macros/latex/contrib/tugboat.zip">zip</a>.
+
+<p>You must process <tt>tugboat.ins</tt> with LaTeX.  This will unpack
+the files <tt>ltugboat.cls</tt> and others for your use.  Documentation
+is contained in the same directory as the macros, in the file
+<tt>ltubguid.ltx</tt> (and PDF).
+
+<p>A ConTeXt style for TUGboat is available on request.
+
+
+<h3 id="hyphenex">Hyphenation exception list</h3>
+
+<p>TUGboat regularly publishes a hyphenation exception list for
+U.S. English.  The full list is <a
+href="http://ctan.org/pkg/hyphenex">on CTAN in machine-readable
+form</a>, along with accompanying information.
+
+
+<hr><small>$Date: 2016/09/29 22:15:18 $;
+<a href="tugboat.html">TUGboat</a>;</small>
+<!-- $Id: footer.html,v 1.18 2016/11/30 22:17:28 karl Exp $ (generic footer) -->
+<form method=get action="//duckduckgo.com/">
+<small>
+  <a href="/index.html">TUG home page</a>;
+  <a href="mailto:webmaster@tug.org">contact webmaster</a>;
+<!-- When a field names is added, must also add to compute_order in store. -->
+   <input type="hidden" name="sites" value="tug.org">
+   <input name=q size=13 maxlength=99
+  ><input type=submit value="Search tug.org">
+   (via&nbsp;<a href="https://duckduckgo.com/">DuckDuckGo</a>)
+</small>
+</form>
+</body></html>
+<!-- muffinresearch.co.uk/adding-a-duckduckgo-search-box-to-your-blog/ -->
+

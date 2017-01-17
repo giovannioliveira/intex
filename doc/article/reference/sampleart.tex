@@ -1,0 +1,81 @@
+% This template is public domain.
+\documentclass{ltugboat}
+
+\usepackage{graphicx}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[breaklinks,hidelinks]{hyperref}
+\else
+\usepackage{url}
+\fi
+
+%%% Start of metadata %%%
+
+\title{Example \TUB\ article}
+
+% repeat info for each author.
+\author{First Last}
+\address{Street Address \\ Town, Postal \\ Country}
+\netaddress{user (at) example dot org}
+\personalURL{http://example.org/~user/}
+
+%%% End of metadata %%%
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This is an example article for \TUB{}.
+Please write an abstract.
+\end{abstract}
+
+\section{Introduction}
+
+This is an example article for \TUB, linked from
+\url{http://tug.org/TUGboat/location.html}.
+
+We recommend the \texttt{graphicx} package for image inclusions, and the
+\texttt{hyperref} package if active urls are desired (in the \acro{PDF}
+output).  Nowadays \TUB\ is produced using \acro{PDF} files exclusively.
+
+The \texttt{ltugboat} class provides these abbreviations (and many more):
+
+% verbatim blocks are often better in \small
+\begin{verbatim}[\small]
+\AllTeX \AMS \AmS \AmSLaTeX \AmSTeX \aw \AW
+\BibTeX \CTAN \DTD \HTML
+\ISBN \ISSN \LaTeXe
+\mf \MFB
+\plain \POBox \PS
+\SGML \TANGLE \TB \TP
+\TUB \TUG \tug
+\UNIX \XeT \WEB \WEAVE
+
+\, \bull \Dash \dash \hyph
+
+\acro{FRED} -> {\small[er] fred}  % please use!
+\cs{fred}   -> \fred
+\meta{fred} -> <fred>
+\nth{n}     -> 1st, 2nd, ...
+\sfrac{3/4} -> 3/4
+\booktitle{Book of Fred}
+\end{verbatim}
+
+For references to other \TUB\ issue, please use the format
+\textsl{volno:issno}, e.g., ``\TUB\ 32:1'' for our \nth{100} issue.
+
+This file is just a template.  The \TUB\ style documentation is the
+\texttt{ltubguid} document at \url{http://ctan.org/pkg/tugboat}.  (For
+\CTAN\ references, where sensible we recommend that form of url, using
+\texttt{/pkg/}; or, if you need to refer to a specific file location,
+\texttt{http://mirror.ctan.org/\textsl{path}}.)
+
+Email \verb|tugboat@tug.org| if problems or questions.
+
+\bibliographystyle{plain}  % we recommend the plain bibliography style
+\nocite{book-minimal}      % just making the bibliography non-empty
+\bibliography{xampl}       % xampl.bib comes with BibTeX
+
+\makesignature
+\end{document}
