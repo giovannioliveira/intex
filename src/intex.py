@@ -65,12 +65,12 @@ def main():
             sys.exit(1)
     srcname = src.split('/')[-1].replace('.pdf','')
     dest = destname + '/' + srcname + '.pdf'
-    ret = os.system("gs -sDEVICE=pdfwrite -sOutputFile=\"%s\" -dNOPAUSE -dBATCH \"%s\"" % (dest, src))
+    ret = os.system('gs -sDEVICE=pdfwrite -sOutputFile="%s" -dNOPAUSE -dBATCH "%s"' % (dest, src))
     if ret:
         message('error while trying to run ghostscript')
         sys.exit(1)
 
-    ret = os.system("pdf2htmlEX --dest-dir \"%s\" --embed cfij --process-nontext 1 \"%s\"" % (destname, dest))
+    ret = os.system('pdf2htmlEX --dest-dir "%s" --embed cfij --process-nontext 1 "%s"' % (destname, dest))
     if ret:
         message('error while trying to run pdf2htmlEX')
         sys.exit(1)
