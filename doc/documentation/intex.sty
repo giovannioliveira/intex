@@ -1,0 +1,126 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{intex}[2016/12/03 Intex v0.1 betta]
+% merged with imageeqn from http://tex.stackexchange.com/questions/214641/how-to-get-mathematical-equations-into-image-in-latex
+
+\RequirePackage{tocloft}
+\RequirePackage[hidelinks]{hyperref}
+\RequirePackage{graphicx}
+\RequirePackage{float}
+\RequirePackage{environ}
+\RequirePackage{pgf}
+
+\newsavebox{\intexbox}
+\savebox{\intexbox}{%%
+        I\hspace{-0.5pt}\textsubscript{N}\hspace{-2.5pt}\TeX}%%
+\newcommand{\intex}{\usebox\intexbox}
+\newcommand{\intexs}{\intex\space}
+
+\newcommand\ie@resolution{288}
+\pgfmathsetmacro\ie@scale{72/\ie@resolution}
+
+\newwrite\@out
+\newcounter{ie@subjob}
+
+% -- open subjob and write preamble
+\def\ie@open{%
+  \stepcounter{ie@subjob}%
+  \immediate\openout\@out=\jobname-eqn-\arabic{ie@subjob}.tex%
+  \immediate\write\@out{\noexpand\documentclass[convert={density=\ie@resolution,outext=.png}]{standalone}}%
+  \immediate\write\@out{\noexpand\usepackage{amsmath}}%
+  \immediate\write\@out{\noexpand\begin{document}}%
+  \immediate\write\@out{\noexpand$}%
+}
+
+% -- close current subjob
+\def\ie@close{%
+  \immediate\write\@out{\noexpand$}%
+  \immediate\write\@out{\noexpand\end{document}}%
+  \immediate\closeout\@out%
+}
+
+% -- compile and insert current subjob
+\def\ie@emit{%
+  \immediate\write18{pdflatex --enable-write18 -interaction=nonstopmode \jobname-eqn-\arabic{ie@subjob}.tex}%
+  \includegraphics[scale=\ie@scale]{\jobname-eqn-\arabic{ie@subjob}.png}%
+}
+
+% -- define \inlineimageeqn command
+\newcommand\inlineimageeqn[1]{%
+  \ie@open%
+  \immediate\write\@out{\unexpanded{#1}}%
+  \ie@close%
+  \ie@emit%
+}
+
+% -- redefine 'equation' environment
+\RenewEnviron{equation}{%
+  \begin{center}
+    \ie@open%
+    \immediate\write\@out{\BODY}%
+    \ie@close%
+    \ie@emit%
+  \end{center}}
+
+% -- redefine '\[ \]' environment
+\def\[#1\]{\begin{center}\inlineimageeqn{#1}\end{center}}
+
+% -- redefine '\( \)' environment
+\def\(#1\){\begin{center}\inlineimageeqn{#1}\end{center}}
+
+% -- refine inline math
+\catcode`\$=13
+\def$#1${\inlineimageeqn{#1}}
+
+\newcommand{\newclass}[3]{
+\newfloat{#1}{h}{lop}[section]
+
+\floatname{#1}{#2}
+
+\expandafter\newcommand\csname listof#1\endcsname{
+	\listof{#1}{#3}
+	\newpage
+}%
+
+\expandafter\newcommand\csname include#1\endcsname[3]{
+	\href{##3\##1}{
+		\fbox{\parbox[c][##2][c]{##1}{\url{##3}}}
+	}
+}%
+
+\expandafter\newcommand\csname includeg#1\endcsname[3][scale=1]{
+	\href{##3\##1}{
+		\includegraphics[##1]{##2}
+	}
+}%
+
+\expandafter\newcommand\csname #1frame\endcsname[3]{
+	\begin{#1}
+		\centering
+		\csname include#1\endcsname{##1\textwidth}{##2\textwidth}{##3}
+	\end{#1}
+}%
+
+\expandafter\newcommand\csname #1gframe\endcsname[3][scale=1]{
+	\begin{#1}
+		\centering
+		\csname includeg#1\endcsname[##1]{##2}{##3}
+	\end{#1}
+}%
+
+\expandafter\newcommand\csname #1framecap\endcsname[4]{
+	\begin{#1}
+		\centering
+		\csname include#1\endcsname{##1\textwidth}{##2\textwidth}{##3}
+		\caption{##4}
+	\end{#1}
+}%
+
+\expandafter\newcommand\csname #1gframecap\endcsname[4][scale=1]{
+	\begin{#1}
+		\centering
+		\csname includeg#1\endcsname[##1]{##2}{##3}
+		\caption{##4}
+	\end{#1}
+}%
+
+}
