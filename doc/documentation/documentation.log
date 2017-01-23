@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.5)  22 JAN 2017 22:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.5)  23 JAN 2017 02:09
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -882,10 +882,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 14.
 
 (/home/giovanni/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-\@out=\write4
-\c@ie@subjob=\count131
-)
+))
 (/home/giovanni/texlive/2016/texmf-dist/tex/generic/oberdiek/hologo.sty
 Package: hologo 2016/05/16 v1.12 A logo collection with bookmark support (HO)
 )
@@ -895,39 +892,54 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@outerparindent=\dimen159
 \enit@toks=\toks35
 \enit@inbox=\box40
-\enitdp@description=\count132
+\enitdp@description=\count131
 )
 (/home/giovanni/texlive/2016/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count133
+\FV@CodeLineNo=\count132
 \FV@InFile=\read2
 \FV@TabBox=\box41
-\c@FancyVerbLine=\count134
-\FV@StepNumber=\count135
-\FV@OutFile=\write5
-) (./documentation.aux)
+\c@FancyVerbLine=\count133
+\FV@StepNumber=\count134
+\FV@OutFile=\write4
+)
+(/home/giovanni/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/home/giovanni/texlive/2016/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/home/giovanni/texlive/2016/texmf-dist/tex/latex/examplep/examplep.sty
+Package: examplep 2010/02/03 v0.04 Verbatim and typeset TeX code
+
+(/home/giovanni/texlive/2016/texmf-dist/tex/latex/examplep/verbfwr.sty
+Package: verbfwr 2003/09/25 v0.02 Verbatim file write
+\verbfwr@writefile=\write5
+))
+(./documentation.aux)
 \openout1 = `documentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-\c@lstlisting=\count136
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+\c@lstlisting=\count135
 \AtBeginShipoutBox=\box42
-Package hyperref Info: Link coloring OFF on input line 21.
+Package hyperref Info: Link coloring OFF on input line 24.
 
 (/home/giovanni/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -935,11 +947,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/home/giovanni/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count137
+\c@section@level=\count136
 )
-LaTeX Info: Redefining \ref on input line 21.
-LaTeX Info: Redefining \pageref on input line 21.
-LaTeX Info: Redefining \nameref on input line 21.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
  (./documentation.out) (./documentation.out)
 \@outlinefile=\write6
 \openout6 = `documentation.out'.
@@ -947,16 +959,16 @@ LaTeX Info: Redefining \nameref on input line 21.
 
 (/home/giovanni/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count138
+\scratchcounter=\count137
 \scratchdimen=\dimen160
 \scratchbox=\box43
-\nofMPsegments=\count139
-\nofMParguments=\count140
+\nofMPsegments=\count138
+\nofMParguments=\count139
 \everyMPshowfont=\toks36
-\MPscratchCnt=\count141
+\MPscratchCnt=\count140
 \MPscratchDim=\dimen161
-\MPnumerator=\count142
-\makeMPintoPDFobject=\count143
+\MPnumerator=\count141
+\makeMPintoPDFobject=\count142
 \everyMPtoPDFconversion=\toks37
 ) (/home/giovanni/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -973,109 +985,134 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )) ABD: EveryShipout initializing macros
-Overfull \hbox (2.3877pt too wide) in paragraph at lines 36--37
-[]\OT1/cmr/m/n/10 The PDF file is op-ti-mized us-ing []\OT1/cmtt/m/n/10 Ghostsc
-ript \OT1/cmr/m/n/10 and con-verted to HTML
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 33.
+
+(/home/giovanni/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Overfull \hbox (2.31448pt too wide) in paragraph at lines 39--40
+[]\T1/cmr/m/n/10 The PDF file is op-ti-mized us-ing []\T1/cmtt/m/n/10 Ghostscri
+pt \T1/cmr/m/n/10 and con-verted to HTML
  []
 
-<flow.png, id=42, 661.72218pt x 597.73312pt>
+<flow.png, id=46, 661.72218pt x 597.73312pt>
 File: flow.png Graphic file (type png)
  <use flow.png>
-Package pdftex.def Info: flow.png used on input line 45.
+Package pdftex.def Info: flow.png used on input line 47.
 (pdftex.def)             Requested size: 241.49895pt x 218.13885pt.
  [1
 
 {/home/giovanni/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 54.
-
-(/home/giovanni/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 54.
 \@float@every@applet=\toks38
-\c@applet=\count144
+\c@applet=\count143
+Package hyperref Info: bookmark level for unknown applet defaults to 0 on input
+ line 67.
  [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.61 \clearpage
-                <./flow.png>]
-Package hyperref Info: bookmark level for unknown applet defaults to 0 on input
- line 71.
- [3
-
-] <ggb.png, id=93, 697.60625pt x 430.60875pt>
-File: ggb.png Graphic file (type png)
-
-<use ggb.png>
-Package pdftex.def Info: ggb.png used on input line 77.
-(pdftex.def)             Requested size: 276.00105pt x 170.36783pt.
-
-Overfull \hbox (3.00354pt too wide) in paragraph at lines 80--81
+l.68 T
+      he same frame can be obtained without frame with the command: <./flow.png
+>]
+Overfull \hbox (2.9177pt too wide) in paragraph at lines 74--75
 [][][][][][][][][][][][][][][][] 
  []
 
+<ggb.png, id=90, 697.60625pt x 430.60875pt>
 File: ggb.png Graphic file (type png)
-<use ggb.png>
-Package pdftex.def Info: ggb.png used on input line 82.
+ <use ggb.png>
+Package pdftex.def Info: ggb.png used on input line 77.
 (pdftex.def)             Requested size: 276.00105pt x 170.36783pt.
- [4
-
- <./ggb.png>]
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 93--94
+ [3 <./ggb.png>]
+Overfull \hbox (8.91628pt too wide) in paragraph at lines 94--95
 [][][][][][][][][][][][][][][][][] 
  []
 
-File: ggb.png Graphic file (type png)
-<use ggb.png>
-Package pdftex.def Info: ggb.png used on input line 103.
-(pdftex.def)             Requested size: 276.00105pt x 170.36783pt.
- [5] (./documentation.lop)
+(./documentation.lop)
 \tf@lop=\write7
 \openout7 = `documentation.lop'.
 
- [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 114.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 114.
+
+Overfull \hbox (2.08313pt too wide) in paragraph at lines 108--109
+[]\T1/cmr/m/n/10 initializes a new class
+ []
+
+
+Overfull \hbox (1.22223pt too wide) in paragraph at lines 109--110
+[]\T1/cmr/m/n/10 includes an empty place-
+ []
+
+[4]
+Overfull \hbox (2.47192pt too wide) in paragraph at lines 110--111
+[]\T1/cmr/m/n/10 includes an im-age place-holder
+ []
+
+
+Overfull \hbox (35.2096pt too wide) in paragraph at lines 110--111
+\T1/cmr/m/n/10 us-ing []\T1/cmtt/m/n/10 <img> \T1/cmr/m/n/10 with given meta-da
+ta. []\T1/cmtt/m/n/10 <opt> \T1/cmr/m/n/10 is passed as op-tion to []\T1/cmtt/m
+/n/10 \includegraphics\T1/cmr/m/n/10 . 
+ []
+
+
+Overfull \hbox (4.72137pt too wide) in paragraph at lines 111--112
+[]\T1/cmr/m/n/10 calls []\T1/cmtt/m/n/10 \include<name> \T1/cmr/m/n/10 in-
+ []
+
+
+Overfull \hbox (7.49847pt too wide) in paragraph at lines 112--113
+[]\T1/cmr/m/n/10 the same
+ []
+
+
+Overfull \hbox (44.65607pt too wide) in paragraph at lines 114--115
+[]\T1/cmr/m/n/10 the same as []\T1/cmtt/m/n/10 \<name>gframe\T1/cmr/m/n/10 ,
+ []
+
+[5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 118.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 118.
  (./documentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 114.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 114.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 118.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 118.
 Package rerunfilecheck Info: File `documentation.out' has not changed.
-(rerunfilecheck)             Checksum: 68FF844E1338DD72B67BBF805351CA67;487.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 114.
+(rerunfilecheck)             Checksum: 0AB16E3AF98838F14AF371D6845C0FE7;535.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 118.
  ) 
 Here is how much of TeX's memory you used:
- 16717 strings out of 493014
- 287286 string characters out of 6131500
- 369045 words of memory out of 5000000
- 19922 multiletter control sequences out of 15000+600000
- 11839 words of font info for 47 fonts, out of 8000000 for 9000
+ 17332 strings out of 493014
+ 297284 string characters out of 6131500
+ 384212 words of memory out of 5000000
+ 20517 multiletter control sequences out of 15000+600000
+ 18298 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,8n,47p,427b,1790s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,8n,47p,431b,1058s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
 st, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
-</home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.p
-fb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
-2.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr12.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr17.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr6.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr7.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr8.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmtt10.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmtt8.pfb>
-Output written on documentation.pdf (6 pages, 226879 bytes).
+{/home/giovanni/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.en
+c}</home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
+pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7
+.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx10
+00.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx
+1200.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sf
+bx1440.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/cm-super/
+sfrm0600.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/cm-supe
+r/sfrm0700.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/cm-su
+per/sfrm0800.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/cm-
+super/sfrm1000.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/c
+m-super/sfrm1200.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public
+/cm-super/sfrm1728.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/publ
+ic/cm-super/sftt0800.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/pu
+blic/cm-super/sftt1000.pfb>
+Output written on documentation.pdf (5 pages, 311583 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
- 54 named destinations out of 1000 (max. 500000)
- 87 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 190 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
+ 55 named destinations out of 1000 (max. 500000)
+ 95 words of extra memory for PDF output out of 10000 (max. 10000000)
 
