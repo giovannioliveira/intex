@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.5)  23 JAN 2017 02:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.5)  23 JAN 2017 20:13
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -872,17 +872,14 @@ Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
 sion-1-18.sty
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 ))
-\intexbox=\box39
-LaTeX Font Info:    Try loading font information for U+msa on input line 14.
+\@out=\write4
+\c@ie@subjob=\count131
+\openout4 = `documentation-intex.tex'.
 
-(/home/giovanni/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+runsystem(pdflatex --enable-write18 -interaction=nonstopmode documentation-inte
+x.tex)...executed.
+
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 14.
-
-(/home/giovanni/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
 (/home/giovanni/texlive/2016/texmf-dist/tex/generic/oberdiek/hologo.sty
 Package: hologo 2016/05/16 v1.12 A logo collection with bookmark support (HO)
 )
@@ -891,20 +888,20 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip78
 \enit@outerparindent=\dimen159
 \enit@toks=\toks35
-\enit@inbox=\box40
-\enitdp@description=\count131
+\enit@inbox=\box39
+\enitdp@description=\count132
 )
 (/home/giovanni/texlive/2016/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count132
+\FV@CodeLineNo=\count133
 \FV@InFile=\read2
-\FV@TabBox=\box41
-\c@FancyVerbLine=\count133
-\FV@StepNumber=\count134
-\FV@OutFile=\write4
+\FV@TabBox=\box40
+\c@FancyVerbLine=\count134
+\FV@StepNumber=\count135
+\FV@OutFile=\write5
 )
 (/home/giovanni/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
@@ -918,7 +915,7 @@ Package: examplep 2010/02/03 v0.04 Verbatim and typeset TeX code
 
 (/home/giovanni/texlive/2016/texmf-dist/tex/latex/examplep/verbfwr.sty
 Package: verbfwr 2003/09/25 v0.02 Verbatim file write
-\verbfwr@writefile=\write5
+\verbfwr@writefile=\write6
 ))
 (./documentation.aux)
 \openout1 = `documentation.aux'.
@@ -937,8 +934,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
-\c@lstlisting=\count135
-\AtBeginShipoutBox=\box42
+\c@lstlisting=\count136
+\AtBeginShipoutBox=\box41
 Package hyperref Info: Link coloring OFF on input line 24.
 
 (/home/giovanni/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -947,28 +944,28 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/home/giovanni/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count136
+\c@section@level=\count137
 )
 LaTeX Info: Redefining \ref on input line 24.
 LaTeX Info: Redefining \pageref on input line 24.
 LaTeX Info: Redefining \nameref on input line 24.
  (./documentation.out) (./documentation.out)
-\@outlinefile=\write6
-\openout6 = `documentation.out'.
+\@outlinefile=\write7
+\openout7 = `documentation.out'.
 
 
 (/home/giovanni/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count137
+\scratchcounter=\count138
 \scratchdimen=\dimen160
-\scratchbox=\box43
-\nofMPsegments=\count138
-\nofMParguments=\count139
+\scratchbox=\box42
+\nofMPsegments=\count139
+\nofMParguments=\count140
 \everyMPshowfont=\toks36
-\MPscratchCnt=\count140
+\MPscratchCnt=\count141
 \MPscratchDim=\dimen161
-\MPnumerator=\count141
-\makeMPintoPDFobject=\count142
+\MPnumerator=\count142
+\makeMPintoPDFobject=\count143
 \everyMPtoPDFconversion=\toks37
 ) (/home/giovanni/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -985,6 +982,31 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )) ABD: EveryShipout initializing macros
+<documentation-intex.png, id=43, 106.3975pt x 36.135pt>
+File: documentation-intex.png Graphic file (type png)
+
+<use documentation-intex.png>
+Package pdftex.def Info: documentation-intex.png used on input line 26.
+(pdftex.def)             Requested size: 26.5993pt x 9.03372pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 26.
+
+(/home/giovanni/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 26.
+
+(/home/giovanni/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+File: documentation-intex.png Graphic file (type png)
+
+<use documentation-intex.png>
+Package pdftex.def Info: documentation-intex.png used on input line 27.
+(pdftex.def)             Requested size: 26.5993pt x 9.03372pt.
+File: documentation-intex.png Graphic file (type png)
+ <use documentation-intex.png>
+Package pdftex.def Info: documentation-intex.png used on input line 29.
+(pdftex.def)             Requested size: 26.5993pt x 9.03372pt.
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 33.
 
 (/home/giovanni/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -995,16 +1017,27 @@ Overfull \hbox (2.31448pt too wide) in paragraph at lines 39--40
 pt \T1/cmr/m/n/10 and con-verted to HTML
  []
 
-<flow.png, id=46, 661.72218pt x 597.73312pt>
+<flow.png, id=48, 661.72218pt x 597.73312pt>
 File: flow.png Graphic file (type png)
  <use flow.png>
 Package pdftex.def Info: flow.png used on input line 47.
-(pdftex.def)             Requested size: 241.49895pt x 218.13885pt.
+(pdftex.def)             Requested size: 276.00105pt x 249.30415pt.
+File: documentation-intex.png Graphic file (type png)
+
+<use documentation-intex.png>
+Package pdftex.def Info: documentation-intex.png used on input line 48.
+(pdftex.def)             Requested size: 26.5993pt x 9.03372pt.
  [1
 
-{/home/giovanni/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/home/giovanni/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./d
+ocumentation-intex.png>]
 \@float@every@applet=\toks38
-\c@applet=\count143
+\c@applet=\count144
+File: documentation-intex.png Graphic file (type png)
+
+<use documentation-intex.png>
+Package pdftex.def Info: documentation-intex.png used on input line 62.
+(pdftex.def)             Requested size: 26.5993pt x 9.03372pt.
 Package hyperref Info: bookmark level for unknown applet defaults to 0 on input
  line 67.
  [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
@@ -1030,8 +1063,8 @@ Overfull \hbox (8.91628pt too wide) in paragraph at lines 94--95
  []
 
 (./documentation.lop)
-\tf@lop=\write7
-\openout7 = `documentation.lop'.
+\tf@lop=\write8
+\openout8 = `documentation.lop'.
 
 
 Overfull \hbox (2.08313pt too wide) in paragraph at lines 108--109
@@ -1066,7 +1099,7 @@ Overfull \hbox (7.49847pt too wide) in paragraph at lines 112--113
  []
 
 
-Overfull \hbox (44.65607pt too wide) in paragraph at lines 114--115
+Overfull \hbox (60.40222pt too wide) in paragraph at lines 114--115
 []\T1/cmr/m/n/10 the same as []\T1/cmtt/m/n/10 \<name>gframe\T1/cmr/m/n/10 ,
  []
 
@@ -1081,10 +1114,10 @@ Package rerunfilecheck Info: File `documentation.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 118.
  ) 
 Here is how much of TeX's memory you used:
- 17332 strings out of 493014
- 297284 string characters out of 6131500
- 384212 words of memory out of 5000000
- 20517 multiletter control sequences out of 15000+600000
+ 17361 strings out of 493014
+ 297903 string characters out of 6131500
+ 384148 words of memory out of 5000000
+ 20545 multiletter control sequences out of 15000+600000
  18298 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,8n,47p,431b,1058s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1095,24 +1128,22 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
 {/home/giovanni/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.en
-c}</home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
-pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7
-.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx10
-00.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx
-1200.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sf
-bx1440.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/cm-super/
-sfrm0600.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/cm-supe
-r/sfrm0700.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/cm-su
-per/sfrm0800.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/cm-
-super/sfrm1000.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/c
-m-super/sfrm1200.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public
-/cm-super/sfrm1728.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/publ
-ic/cm-super/sftt0800.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/pu
-blic/cm-super/sftt1000.pfb>
-Output written on documentation.pdf (5 pages, 311583 bytes).
+c}</home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1000.
+pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx120
+0.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1
+440.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfr
+m0600.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/cm-super/s
+frm0700.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/cm-super
+/sfrm0800.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/cm-sup
+er/sfrm1000.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/cm-s
+uper/sfrm1200.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/cm
+-super/sfrm1728.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/public/
+cm-super/sftt0800.pfb></home/giovanni/texlive/2016/texmf-dist/fonts/type1/publi
+c/cm-super/sftt1000.pfb>
+Output written on documentation.pdf (5 pages, 297880 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
+ 184 PDF objects out of 1000 (max. 8388607)
+ 158 compressed objects within 2 object streams
  55 named destinations out of 1000 (max. 500000)
- 95 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 100 words of extra memory for PDF output out of 10000 (max. 10000000)
 

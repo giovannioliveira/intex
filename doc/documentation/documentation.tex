@@ -19,7 +19,7 @@
 \newcommand{\gr}{\textgreater}%
 
 \author{G. A. Oliveira}
-\title{The \intexs toolkit}
+\title{The \intex\space toolkit}
 
 \begin{document}
 \maketitle
@@ -44,8 +44,8 @@ Figure \ref{fig:flow} shows the steps to generate an interactive document using 
 \end{enumerate}
 \begin{figure}
 \centering
-	\includegraphics[width=.7\textwidth]{flow.png}
-\caption{Workflow to generate an interactive document using \intex}
+	\includegraphics[width=.8\textwidth]{flow.png}
+	\caption{Workflow to generate an interactive document using \protect\intex}
 \label{fig:flow}
 \end{figure}
 
@@ -111,7 +111,7 @@ You can easily make the table of contents for the \verb|applet| environment by c
 	\item[\PVerb{\<name>frame{<swidth>}{<sheight>}{<metadata>}}] calls \verb|\include<name>| inside a centered frame with given arguments. The values \verb|<swidth>| and \verb|<sheight>| are scaled to \verb|\textwidth|.
 	\item[\PVerb{\<name>framecap{<swidth>}{<sheight>}{<metadata>}{<caption>}}] the same as \verb|\<name>frame|, but with caption.
 	\item[\PVerb{\<name>gframe[<opt>]{<img>}{<metadata>}}] calls \verb|\includeg<name>| inside a centered frame with given arguments.
-	\item[\PVerb{\<name>gframe[<opt>]{<img>}{<metadata>}{<caption>}}] the same as \verb|\<name>gframe|, but with caption.
+	\item[\PVerb{\<name>gframecap[<opt>]{<img>}{<metadata>}{<caption>}}] the same as \verb|\<name>gframe|, but with caption.
 	\item[\PVerb{\listof<name>}] make the list of environment using default style.
 \end{description}
 

@@ -1,3 +1,5 @@
+% TODO
+% include options for converting intex logo and math expr into images
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{intex}[2016/12/03 Intex v0.1 betta]
 % merged with imageeqn from http://tex.stackexchange.com/questions/214641/how-to-get-mathematical-equations-into-image-in-latex
@@ -9,18 +11,30 @@
 \RequirePackage{environ}
 \RequirePackage{pgf}
 
-\newsavebox{\intexbox}
-\savebox{\intexbox}{%%
-        I\hspace{-0.5pt}\textsubscript{N}\hspace{-2.5pt}\TeX}%%
-\newcommand{\intex}{\usebox\intexbox}
-\newcommand{\intexs}{\intex\space}
+\newcommand\ie@resolution{288}
+\pgfmathsetmacro\ie@scale{72/\ie@resolution}
 
-%\newcommand\ie@resolution{288}
-%\pgfmathsetmacro\ie@scale{72/\ie@resolution}
-%
-%\newwrite\@out
-%\newcounter{ie@subjob}
-%
+\newwrite\@out
+\newcounter{ie@subjob}
+
+%% -- text intex logo
+%\newsavebox{\intexbox}
+%\savebox{\intexbox}{%%
+%        I\hspace{-0.5pt}\raisebox{-2.pt}{N}\hspace{-2.5pt}\TeX}%%
+%\newcommand{\useintexbox}{\usebox\intexbox}
+
+%% -- image intex logo
+\immediate\openout\@out=\jobname-intex.tex%
+\immediate\write\@out{\noexpand\documentclass[convert={density=\ie@resolution,outext=.png}]{standalone}}%
+\immediate\write\@out{\noexpand\begin{document}}%
+\immediate\write\@out{I\noexpand\hspace{-0.5pt}\noexpand\raisebox{-2.pt}{N}\noexpand\hspace{-2.5pt}\noexpand\TeX}%
+\immediate\write\@out{\noexpand\end{document}}%
+\immediate\closeout\@out%
+\immediate\write18{pdflatex --enable-write18 -interaction=nonstopmode \jobname-intex.tex}%
+
+\newcommand{\intex}{\includegraphics[scale=\ie@scale]{\jobname-intex.png}}
+
+%% -- image equations
 %% -- open subjob and write preamble
 %\def\ie@open{%
 %  \stepcounter{ie@subjob}%
@@ -99,18 +113,18 @@
 	\end{#1}
 }%
 
-\expandafter\newcommand\csname #1gframe\endcsname[3][scale=1]{
-	\begin{#1}
-		\centering
-		\csname includeg#1\endcsname[##1]{##2}{##3}
-	\end{#1}
-}%
-
 \expandafter\newcommand\csname #1framecap\endcsname[4]{
 	\begin{#1}
 		\centering
 		\csname include#1\endcsname{##1\textwidth}{##2\textwidth}{##3}
 		\caption{##4}
+	\end{#1}
+}%
+
+\expandafter\newcommand\csname #1gframe\endcsname[3][scale=1]{
+	\begin{#1}
+		\centering
+		\csname includeg#1\endcsname[##1]{##2}{##3}
 	\end{#1}
 }%
 
