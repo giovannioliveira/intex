@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-import sys, os
+import sys, os, platform
+from os import path
 from PyQt5.QtWidgets import *
 from bs4 import BeautifulSoup
 from conv import Ui_Dialog
@@ -55,27 +56,47 @@ class ConvDialog(QDialog,Ui_Dialog):
 def main():
     app = QApplication(sys.argv)
     if len(sys.argv)>2:
-        src,destname = sys.argv[1:3]
+        src,destdir = sys.argv[1:3]
     else:
         aux = ConvDialog()
         aux.exec()
         if aux.inp and aux.out:
-            src,destname = aux.inp,aux.out
+            src,destdir = aux.inp,path.normpath(aux.out)
         else:
             sys.exit(1)
-    srcname = src.split('/')[-1].replace('.pdf','')
-    dest = destname + '/' + srcname + '.pdf'
-    ret = os.system('gs -sDEVICE=pdfwrite -sOutputFile="%s" -dNOPAUSE -dBATCH "%s"' % (dest, src))
-    if ret:
-        message('error while trying to run ghostscript')
+    srcname,srcext = path.splitext(path.basename(src))
+    dest = path.join(destdir,path.basename(src))
+    ostype = platform.system()
+    
+    if ostype == 'Linux':
+
+        ret = os.system('gs -sDEVICE=pdfwrite -sOutputFile="%s" -dNOPAUSE -dBATCH "%s"' % (dest, src))
+        if ret:
+            message('error while trying to run ghostscript')
+            sys.exit(1)
+        ret = os.system('pdf2htmlEX --dest-dir "%s" --embed cfij --process-nontext 1 "%s"' % (destdir, dest))
+        if ret:
+            message('error while trying to run pdf2htmlEX')
+            sys.exit(1)
+    elif ostype == 'Windows':
+        
+        root = getattr(sys,'_MEIPASS',path.dirname(sys.executable)) if getattr(sys,'frozen',False) else path.dirname(path.dirname(path.abspath(__file__)))
+        gspath = path.join(root,'lib','win','gs','bin','gswin32.exe')
+        p2hpath = path.join(root,'lib','win','pdf2htmlEX','pdf2htmlEX.exe') 
+
+        ret = os.system('%s -sDEVICE=pdfwrite -sOutputFile="%s" -dNOPAUSE -dBATCH "%s"' % (gspath, dest, src))
+        if ret:
+            message('error while trying to run ghostscript')
+            sys.exit(1)
+        ret = os.system('%s --dest-dir "%s" --embed cfij --process-nontext 1 "%s"' % (p2hpath, destdir, dest))
+        if ret:
+            message('error while trying to run pdf2htmlEX')
+            sys.exit(1)
+    else:
+        message('platform system not supported')
         sys.exit(1)
 
-    ret = os.system('pdf2htmlEX --dest-dir "%s" --embed cfij --process-nontext 1 "%s"' % (destname, dest))
-    if ret:
-        message('error while trying to run pdf2htmlEX')
-        sys.exit(1)
-
-    ht = destname + '/' + srcname + '.html'
+    ht = path.join(destdir,srcname+'.html')
     htfile = open(ht)
 
     soup = BeautifulSoup(htfile, 'html.parser')
@@ -91,7 +112,7 @@ def main():
         file.write(str(soup))
 
     htfile.close()
-    message('document successfully exported to %s' % destname)
+    message('document successfully exported to %s' % destdir)
 
 if __name__ == '__main__':
     main()
