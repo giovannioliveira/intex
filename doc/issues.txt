@@ -5,3 +5,10 @@ id	type	status	description
 4	improv	open	warn src pdf overwrite when outdir = srcdir
 5	bug	closed	math expr like srqt getting deformed after html conv
 6	task	open	implement interface to register classes
+
+include pdflatex interface into GUI application
+create options in intex.sty to convert stuff like math expression into image in order to preserv its formatting
+make a new interface to replace pdf2htmlEX.js
+add dimension to src metadata when handling geogebra frames
+implement interface to use a custom class handler for content frames
+
