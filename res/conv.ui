@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>471</width>
-    <height>121</height>
+    <height>128</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -30,14 +30,14 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="0">
+     <item row="2" column="0">
       <widget class="QLabel" name="label_2">
        <property name="text">
         <string>Output dir</string>
        </property>
       </widget>
      </item>
-     <item row="1" column="2">
+     <item row="2" column="2">
       <widget class="QPushButton" name="btOut">
        <property name="text">
         <string>Choose</string>
@@ -47,8 +47,35 @@
      <item row="0" column="1">
       <widget class="QLineEdit" name="etIn"/>
      </item>
-     <item row="1" column="1">
+     <item row="2" column="1">
       <widget class="QLineEdit" name="etOut"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QCheckBox" name="cbHandler">
+       <property name="text">
+        <string>Default handler</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="etHandler">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="btHandler">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Choose</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </item>

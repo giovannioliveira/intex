@@ -5,11 +5,15 @@ from PyQt5.QtWidgets import *
 from bs4 import BeautifulSoup
 from conv import Ui_Dialog
 
-def set_iframe(entry, href):
-    entry.contents[0].append(
-        BeautifulSoup('<iframe style="width:100%; height:100%;" src="{0}" frameborder="0" allowfullscreen></iframe>'
-                      .format(href),'html.parser'))
-setters = {'video':set_iframe,'applet':set_iframe}
+# def set_iframe(entry, href):
+#     entry.contents[0].append(
+#         BeautifulSoup('<iframe style="width:100%; height:100%;" src="{0}" frameborder="0" allowfullscreen></iframe>'
+#                       .format(href),'html.parser'))
+# setters = {'video':set_iframe,'applet':set_iframe}
+
+def iframe_handler(metadata):
+    return '<iframe style="width:100%; height:100%;" src="{0}" frameborder="0" allowfullscreen></iframe>'.format(metadata)
+default_handlers = {'applet':iframe_handler, 'iframe':iframe_handler, 'video':iframe_handler}
 
 def message(text):
     msg = QMessageBox()
@@ -31,13 +35,15 @@ class ConvDialog(QDialog,Ui_Dialog):
             if len(sys.argv)>2:
                 self.etOut.setText(sys.argv[2])
         self.set_listeners()
-        self.inp,self.out = None,None
+        self.inp,self.out,self.han = None,None,None
 
     def set_listeners(self):
         self.btIn.clicked.connect(self.on_in)
         self.btOut.clicked.connect(self.on_out)
         self.btBox.button(QDialogButtonBox.Ok).clicked.disconnect()
         self.btBox.button(QDialogButtonBox.Ok).clicked.connect(self.on_ok)
+        self.cbHandler.stateChanged.connect(self.on_cbhandler)
+        self.btHandler.clicked.connect(self.on_bthandler)
 
     def on_in(self):
         aux = select_file()
@@ -48,24 +54,35 @@ class ConvDialog(QDialog,Ui_Dialog):
         if aux:
             self.etOut.setText(aux[0])
     def on_ok(self):
-        inp,out = self.etIn.text(),self.etOut.text()
-        if len(inp)>0 and len(out)>0:
-            self.inp,self.out = inp,out
+        inp,out,han = self.etIn.text(),self.etOut.text(),self.etHandler.text()
+        if len(inp)>0 and len(out)>0 and (self.cbHandler.isChecked() or len(han)>0):
+            self.inp,self.out,self.han = inp,out,(None if self.cbHandler.isChecked() else han)
             self.close()
+    def on_cbhandler(self):
+        self.etHandler.setText('')
+        self.etHandler.setEnabled(not self.cbHandler.isChecked())
+        self.btHandler.setEnabled(not self.cbHandler.isChecked())
+    def on_bthandler(self):
+        aux = select_file()
+        if aux:
+            self.etHandler.setText(aux[0])
 
 def main():
     app = QApplication(sys.argv)
-    if len(sys.argv)>2:
-        src,destdir = sys.argv[1:3]
+    aux = ConvDialog()
+    aux.exec()
+    if aux.inp and aux.out:
+        src,destdir,han = aux.inp,path.normpath(aux.out),aux.han
     else:
-        aux = ConvDialog()
-        aux.exec()
-        if aux.inp and aux.out:
-            src,destdir = aux.inp,path.normpath(aux.out)
-        else:
-            sys.exit(1)
+        sys.exit(1)
     srcname,srcext = path.splitext(path.basename(src))
     dest = path.join(destdir,path.basename(src))
+    handlers = dict()
+    if han:
+        chan = dict()
+        exec(open(path.normpath(aux.han)).read(),chan)
+        handlers = chan['handlers']
+
     ostype = platform.system()
     
     if ostype == 'Linux':
@@ -78,6 +95,7 @@ def main():
         if ret:
             message('error while trying to run pdf2htmlEX')
             sys.exit(1)
+
     elif ostype == 'Windows':
         
         root = getattr(sys,'_MEIPASS',path.dirname(sys.executable)) if getattr(sys,'frozen',False) else path.dirname(path.dirname(path.abspath(__file__)))
@@ -100,13 +118,18 @@ def main():
     htfile = open(ht)
 
     soup = BeautifulSoup(htfile, 'html.parser')
-    global setters
     for tag in soup.find_all('a'):
-        href = tag.get('href')
-        suffix = href.split('#')[-1]
-        if suffix in setters.keys():
-            newhref = href.replace('#' + suffix, '')
-            setters[suffix](tag, newhref)
+        href = tag.get('href').rsplit('#',1)
+        if len(href) != 2:
+            continue
+        metadata,cls = href
+        hdl = None
+        if cls in handlers.keys():
+            hdl = handlers[cls]
+        elif cls in default_handlers.keys():
+            hdl = default_handlers[cls]
+        if hdl:
+            tag.contents[0].append(BeautifulSoup(hdl(metadata),'html.parser'))
 
     with open(ht, "w") as file:
         file.write(str(soup))
