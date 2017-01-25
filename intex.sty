@@ -8,14 +8,47 @@
 \RequirePackage{float}
 \RequirePackage{environ}
 \RequirePackage{pgf}
+\RequirePackage{amsmath}
 
 \newcommand\ie@resolution{288}
 \pgfmathsetmacro\ie@scale{72/\ie@resolution}
 
 \newwrite\@out
+
+%% -- text intex logo
+%\newsavebox{\intexbox}
+%\savebox{\intexbox}{%%
+%        I\hspace{-0.5pt}\raisebox{-2.pt}{N}\hspace{-2.5pt}\TeX}%%
+%\newcommand{\useintexbox}{\usebox\intexbox}
+\newif\ifnobox
+\noboxtrue
+\newcommand{\intex}{%
+	\ifnobox%
+		\newsavebox{\intexbox}%
+		\savebox{\intexbox}{I\hspace{-0.5pt}\raisebox{-2pt}{N}\hspace{-2.5pt}\TeX}%
+		\global\noboxfalse%
+	\fi%
+	\usebox\intexbox%
+}
+
+\newif\ifnologo
+\nologotrue
+\newcommand{\inteximg}[1][scale=\ie@scale]{
+	\ifnologo
+		\immediate\openout\@out=\jobname-intex.tex%
+		\immediate\write\@out{\noexpand\documentclass[convert={density=\ie@resolution,outext=.png}]{standalone}}%
+		\immediate\write\@out{\noexpand\begin{document}}%
+		\immediate\write\@out{I\noexpand\hspace{-0.5pt}\noexpand\raisebox{-2pt}{N}\noexpand\hspace{-2.5pt}\noexpand\TeX}%
+		\immediate\write\@out{\noexpand\end{document}}%
+		\immediate\closeout\@out%
+		\immediate\write18{pdflatex --enable-write18 -interaction=nonstopmode \jobname-intex.tex}%
+		\global\nologofalse
+	\fi
+	\includegraphics[#1]{\jobname-intex.png}
+}
+
 \newcounter{ie@subjob}
 
-% -- open subjob and write preamble
 \def\ie@open{%
   \stepcounter{ie@subjob}%
   \immediate\openout\@out=\jobname-eqn-\arabic{ie@subjob}.tex%
@@ -25,7 +58,6 @@
   \immediate\write\@out{\noexpand$}%
 }
 
-% -- close current subjob
 \def\ie@close{%
   \immediate\write\@out{\noexpand$}%
   \immediate\write\@out{\noexpand\end{document}}%
@@ -39,41 +71,39 @@
 }
 
 % -- define \inlineimageeqn command
-\newcommand\inlineimageeqn[1]{%
+\newcommand\equationimg[1]{%
   \ie@open%
   \immediate\write\@out{\unexpanded{#1}}%
   \ie@close%
   \ie@emit%
 }
 
-% -- redefine 'equation' environment
-\RenewEnviron{equation}{%
-  \begin{center}
-    \ie@open%
-    \immediate\write\@out{\BODY}%
-    \ie@close%
-    \ie@emit%
-  \end{center}}
-
-% -- redefine '\[ \]' environment
-\def\[#1\]{\begin{center}\inlineimageeqn{#1}\end{center}}
-
-% -- redefine '\( \)' environment
-\def\(#1\){\begin{center}\inlineimageeqn{#1}\end{center}}
-
-% -- refine inline math
-\catcode`\$=13
-\def$#1${\inlineimageeqn{#1}}
+%% -- redefine 'equation' environment
+%\RenewEnviron{equation}{%
+%  \begin{center}
+%    \ie@open%
+%    \immediate\write\@out{\BODY}%
+%    \ie@close%
+%    \ie@emit%
+%  \end{center}}
+%
+%% -- redefine '\[ \]' environment
+%\def\[#1\]{\begin{center}\inlineimageeqn{#1}\end{center}}
+%
+%% -- redefine '\( \)' environment
+%\def\(#1\){\begin{center}\inlineimageeqn{#1}\end{center}}
+%
+%% -- refine inline math
+%\catcode`\$=13
+%\def$#1${\inlineimageeqn{#1}}
 
 \newcommand{\newclass}[3]{
-
-\newfloat{#1}{h}{ext}[chapter]
+\newfloat{#1}{H}{lop}[section]
 
 \floatname{#1}{#2}
 
 \expandafter\newcommand\csname listof#1\endcsname{
 	\listof{#1}{#3}
-	\newpage
 }%
 
 \expandafter\newcommand\csname include#1\endcsname[3]{
@@ -95,18 +125,18 @@
 	\end{#1}
 }%
 
-\expandafter\newcommand\csname #1gframe\endcsname[3][scale=1]{
-	\begin{#1}
-		\centering
-		\csname includeg#1\endcsname[##1]{##2}{##3}
-	\end{#1}
-}%
-
 \expandafter\newcommand\csname #1framecap\endcsname[4]{
 	\begin{#1}
 		\centering
 		\csname include#1\endcsname{##1\textwidth}{##2\textwidth}{##3}
 		\caption{##4}
+	\end{#1}
+}%
+
+\expandafter\newcommand\csname #1gframe\endcsname[3][scale=1]{
+	\begin{#1}
+		\centering
+		\csname includeg#1\endcsname[##1]{##2}{##3}
 	\end{#1}
 }%
 
