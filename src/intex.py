@@ -91,7 +91,7 @@ def main():
         if ret:
             message('error while trying to run ghostscript')
             sys.exit(1)
-        ret = os.system('pdf2htmlEX --dest-dir "%s" --embed cfij --process-nontext 1 "%s"' % (destdir, dest))
+        ret = os.system('pdf2htmlEX --zoom 1.5 --dest-dir "%s" --embed cfij --process-nontext 1 "%s"' % (destdir, dest))
         if ret:
             message('error while trying to run pdf2htmlEX')
             sys.exit(1)
@@ -106,7 +106,7 @@ def main():
         if ret:
             message('error while trying to run ghostscript')
             sys.exit(1)
-        ret = os.system('%s --dest-dir "%s" --embed cfij --process-nontext 1 "%s"' % (p2hpath, destdir, dest))
+        ret = os.system('%s --zoom 1.5 --dest-dir "%s" --embed cfij --process-nontext 1 "%s"' % (p2hpath, destdir, dest))
         if ret:
             message('error while trying to run pdf2htmlEX')
             sys.exit(1)
