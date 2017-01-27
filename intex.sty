@@ -20,15 +20,8 @@
 %\savebox{\intexbox}{%%
 %        I\hspace{-0.5pt}\raisebox{-2.pt}{N}\hspace{-2.5pt}\TeX}%%
 %\newcommand{\useintexbox}{\usebox\intexbox}
-\newif\ifnobox
-\noboxtrue
-\newcommand{\intex}{%
-	\ifnobox%
-		\newsavebox{\intexbox}%
-		\savebox{\intexbox}{I\hspace{-0.5pt}\raisebox{-2pt}{N}\hspace{-2.5pt}\TeX}%
-		\global\noboxfalse%
-	\fi%
-	\usebox\intexbox%
+\newcommand{\intex}[1][1]{%
+	\scalebox{#1}{I\hspace{-0.5pt}\raisebox{-2pt}{N}\hspace{-2.5pt}\TeX\hspace{-3pt}}
 }
 
 \newif\ifnologo
