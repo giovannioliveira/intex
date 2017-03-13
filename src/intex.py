@@ -115,8 +115,7 @@ def main():
         sys.exit(1)
 
     ht = path.join(destdir,srcname+'.html')
-    htfile = open(ht)
-
+    htfile = open(ht,encoding="utf8")
     soup = BeautifulSoup(htfile, 'html.parser')
     for tag in soup.find_all('a'):
         href = tag.get('href').rsplit('#',1)
@@ -131,7 +130,7 @@ def main():
         if hdl:
             tag.contents[0].append(BeautifulSoup(hdl(metadata),'html.parser'))
 
-    with open(ht, "w") as file:
+    with open(ht, "w", encoding="utf8") as file:
         file.write(str(soup))
 
     htfile.close()
@@ -139,3 +138,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
