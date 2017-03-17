@@ -3,9 +3,9 @@
 block_cipher = None
 
 
-a = Analysis(['C:\\Users\\giovanni\\Desktop\\intex\\src\\intex.py'],
-             pathex=['C:\\Users\\giovanni\\AppData\\Local\\Programs\\Python\\Python35\\Lib\\site-packages\\PyQt5\\Qt\\bin', 'C:\\Users\\giovanni\\Desktop\\intex\\src', 'C:\\Users\\giovanni\\Desktop\\intex'],
-             binaries=[('C:\\Users\\giovanni\\Desktop\\intex\\lib','lib')],
+a = Analysis(['C:\\Users\\g\\Development\\intex\\src\\intex.py'],
+             pathex=['C:\\Users\\g\\AppData\\Local\\Programs\\Python\\Python35\\Lib\\site-packages\\PyQt5\\Qt\\bin', 'C:\\Users\\g\\Development\\intex\\src', 'C:\\Users\\g\\Development\\intex'],
+             binaries=[('C:\\Users\\g\\Development\\intex\\lib','lib')],
              datas=None,
              hiddenimports=['PyQt5'],
              hookspath=[],

@@ -5,12 +5,6 @@ from PyQt5.QtWidgets import *
 from bs4 import BeautifulSoup
 from conv import Ui_Dialog
 
-# def set_iframe(entry, href):
-#     entry.contents[0].append(
-#         BeautifulSoup('<iframe style="width:100%; height:100%;" src="{0}" frameborder="0" allowfullscreen></iframe>'
-#                       .format(href),'html.parser'))
-# setters = {'video':set_iframe,'applet':set_iframe}
-
 def iframe_handler(metadata):
     return '<iframe style="width:100%; height:100%;" src="{0}" frameborder="0" allowfullscreen></iframe>'.format(metadata)
 default_handlers = {'applet':iframe_handler, 'iframe':iframe_handler, 'video':iframe_handler}
@@ -76,7 +70,6 @@ def main():
     else:
         sys.exit(1)
     srcname,srcext = path.splitext(path.basename(src))
-    dest = path.join(destdir,path.basename(src))
     handlers = dict()
     if han:
         chan = dict()
@@ -86,27 +79,17 @@ def main():
     ostype = platform.system()
     
     if ostype == 'Linux':
-
-        ret = os.system('gs -sDEVICE=pdfwrite -sOutputFile="%s" -dNOPAUSE -dBATCH "%s"' % (dest, src))
-        if ret:
-            message('error while trying to run ghostscript')
-            sys.exit(1)
-        ret = os.system('pdf2htmlEX --zoom 1.5 --dest-dir "%s" --embed cfij --process-nontext 1 "%s"' % (destdir, dest))
+        
+        ret = os.system('pdf2htmlEX --zoom 1.5 --dest-dir "%s" --embed cfij --process-nontext 1 "%s"' % (destdir, src))
         if ret:
             message('error while trying to run pdf2htmlEX')
             sys.exit(1)
 
     elif ostype == 'Windows':
-        
         root = getattr(sys,'_MEIPASS',path.dirname(sys.executable)) if getattr(sys,'frozen',False) else path.dirname(path.dirname(path.abspath(__file__)))
-        gspath = path.join(root,'lib','win','gs','bin','gswin32.exe')
         p2hpath = path.join(root,'lib','win','pdf2htmlEX','pdf2htmlEX.exe') 
 
-        ret = os.system('%s -sDEVICE=pdfwrite -sOutputFile="%s" -dNOPAUSE -dBATCH "%s"' % (gspath, dest, src))
-        if ret:
-            message('error while trying to run ghostscript')
-            sys.exit(1)
-        ret = os.system('%s --zoom 1.5 --dest-dir "%s" --embed cfij --process-nontext 1 "%s"' % (p2hpath, destdir, dest))
+        ret = os.system('%s --zoom 1.5 --dest-dir "%s" --embed cfij --process-nontext 1 "%s"' % (p2hpath, destdir, src))
         if ret:
             message('error while trying to run pdf2htmlEX')
             sys.exit(1)
@@ -130,7 +113,7 @@ def main():
         if hdl:
             tag.contents[0].append(BeautifulSoup(hdl(metadata),'html.parser'))
 
-    with open(ht, "w", encoding="utf8") as file:
+    with open(ht,"w",encoding="utf8") as file:
         file.write(str(soup))
 
     htfile.close()
