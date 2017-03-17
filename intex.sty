@@ -100,15 +100,11 @@
 }%
 
 \expandafter\newcommand\csname include#1\endcsname[3]{
-	\href{##3\##1}{
-		\fbox{\parbox[c][##2][c]{##1}{\url{##3}}}
-	}
+	\href{##3\##1}{\fbox{\parbox[c][##2][c]{##1}{\url{##3}}}}
 }%
 
 \expandafter\newcommand\csname includeg#1\endcsname[3][scale=1]{
-	\href{##3\##1}{
-		\includegraphics[##1]{##2}
-	}
+	\href{##3\##1}{\includegraphics[##1]{##2}}
 }%
 
 \expandafter\newcommand\csname #1frame\endcsname[3]{
